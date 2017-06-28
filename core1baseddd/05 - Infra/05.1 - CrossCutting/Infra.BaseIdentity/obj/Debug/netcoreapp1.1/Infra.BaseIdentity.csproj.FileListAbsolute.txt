@@ -1,0 +1,7 @@
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.1 - CrossCutting\Infra.BaseIdentity\bin\Debug\netcoreapp1.1\Infra.BaseIdentity.deps.json
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.1 - CrossCutting\Infra.BaseIdentity\bin\Debug\netcoreapp1.1\Infra.BaseIdentity.dll
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.1 - CrossCutting\Infra.BaseIdentity\bin\Debug\netcoreapp1.1\Infra.BaseIdentity.pdb
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.1 - CrossCutting\Infra.BaseIdentity\obj\Debug\netcoreapp1.1\Infra.BaseIdentity.AssemblyInfo.cs
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.1 - CrossCutting\Infra.BaseIdentity\obj\Debug\netcoreapp1.1\Infra.BaseIdentity.dll
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.1 - CrossCutting\Infra.BaseIdentity\obj\Debug\netcoreapp1.1\Infra.BaseIdentity.pdb
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.1 - CrossCutting\Infra.BaseIdentity\obj\Debug\netcoreapp1.1\Infra.BaseIdentity.csprojResolveAssemblyReference.cache

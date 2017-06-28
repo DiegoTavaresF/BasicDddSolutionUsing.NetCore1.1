@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\04 - Domain\Domain\Domain.csproj" />
+    <ProjectReference Include="..\..\05 - Infra\05.2 - Infra.Data\Infra.Data\Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

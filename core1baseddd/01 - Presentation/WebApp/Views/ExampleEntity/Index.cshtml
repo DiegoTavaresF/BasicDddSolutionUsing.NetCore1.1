@@ -1,0 +1,34 @@
+﻿@model WebApp.ViewModels.ExampleEntity.ExampleEntityIndexViewModel
+
+
+<h2>Example data from Application.</h2>
+
+<div class="row">
+    <p>
+        <div class="col-sm-12">
+            Examples
+            @Html.DropDownListFor(vm => vm.ExamplesEntity, new SelectList(Model.ExamplesEntity, "Id", "Nome"), "Select")
+
+
+            @if (!Model.ExamplesEntity.Any())
+            {
+                <label style="color:red">Your table [dbo].[ExampleEntity] is empty. Insert some data to test.</label>
+            }
+        </div>
+    </p>
+    
+    <p>
+        <div class="col-sm-12">
+            @Model.SomeOtherDataFromSomeOtherService
+        </div>
+    </p>
+    
+</div>
+
+
+
+<div class="row" style="margin-top:100px;">
+
+  
+
+</div>

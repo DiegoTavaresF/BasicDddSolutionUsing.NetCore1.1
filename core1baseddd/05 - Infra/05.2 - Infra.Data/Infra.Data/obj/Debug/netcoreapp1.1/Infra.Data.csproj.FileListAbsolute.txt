@@ -1,0 +1,11 @@
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.2 - Infra.Data\Infra.Data\bin\Debug\netcoreapp1.1\Infra.Data.deps.json
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.2 - Infra.Data\Infra.Data\bin\Debug\netcoreapp1.1\Infra.Data.dll
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.2 - Infra.Data\Infra.Data\bin\Debug\netcoreapp1.1\Infra.Data.pdb
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.2 - Infra.Data\Infra.Data\bin\Debug\netcoreapp1.1\Domain.dll
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.2 - Infra.Data\Infra.Data\bin\Debug\netcoreapp1.1\Infra.BaseIdentity.dll
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.2 - Infra.Data\Infra.Data\bin\Debug\netcoreapp1.1\Domain.pdb
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.2 - Infra.Data\Infra.Data\bin\Debug\netcoreapp1.1\Infra.BaseIdentity.pdb
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.2 - Infra.Data\Infra.Data\obj\Debug\netcoreapp1.1\Infra.Data.csprojResolveAssemblyReference.cache
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.2 - Infra.Data\Infra.Data\obj\Debug\netcoreapp1.1\Infra.Data.AssemblyInfo.cs
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.2 - Infra.Data\Infra.Data\obj\Debug\netcoreapp1.1\Infra.Data.dll
+X:\DEV 2017\GIT\BaseDddCore\core1baseddd\05 - Infra\05.2 - Infra.Data\Infra.Data\obj\Debug\netcoreapp1.1\Infra.Data.pdb
