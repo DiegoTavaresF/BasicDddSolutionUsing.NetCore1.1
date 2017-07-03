@@ -1,0 +1,21 @@
+/core1baseddd/XUnitTesWebApp/bin
+/core1baseddd/XUnitTestApplication/bin
+/core1baseddd/XUnitTestDomain/bin
+/core1baseddd/XUnitTestWebApp/bin
+/core1baseddd/05 - Infra/05.2 - Infra.Data/Infra.Data/bin
+/core1baseddd/05 - Infra/05.1 - CrossCutting/Infra.Resources/bin
+/core1baseddd/05 - Infra/05.1 - CrossCutting/Infra.BaseIdentity/bin
+/core1baseddd/04 - Domain/Domain/bin
+/core1baseddd/03 - Application/Application/bin
+/core1baseddd/01 - Presentation/WebApp/bin
+/core1baseddd/05 - Infra/05.1 - CrossCutting/Infra.Resources/obj
+/core1baseddd/XUnitTestApplication/obj
+/core1baseddd/XUnitTesWebApp/obj
+/core1baseddd/XUnitTestDomain/obj
+/core1baseddd/XUnitTestWebApp/obj
+/core1baseddd/01 - Presentation/WebApp/obj
+/core1baseddd/05 - Infra/05.2 - Infra.Data/Infra.Data/obj
+/core1baseddd/04 - Domain/Domain/obj
+/core1baseddd/05 - Infra/05.1 - CrossCutting/Infra.BaseIdentity/obj
+/core1baseddd/03 - Application/Application/obj
+/core1baseddd/.vs

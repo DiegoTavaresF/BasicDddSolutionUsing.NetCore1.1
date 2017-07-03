@@ -4,6 +4,8 @@ using Infra.BaseIdentity.Contexts;
 using Infra.Data.EntityConfig;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
+using Microsoft.EntityFrameworkCore.Metadata;
+using System.Linq;
 
 namespace Infra.Data.Contexts
 {
@@ -33,6 +35,11 @@ namespace Infra.Data.Contexts
         {
             new ExampleEntityConfig().DefinirConfiguracoesDaEntidade(modelBuilder);
             new UsuarioConfig().DefinirConfiguracoesDaEntidade(modelBuilder);
+
+            foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+            {
+                relationship.DeleteBehavior = DeleteBehavior.Restrict;
+            }
 
             base.OnModelCreating(modelBuilder);
         }

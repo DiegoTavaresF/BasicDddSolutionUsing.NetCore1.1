@@ -8,7 +8,7 @@ using Infra.Data.Contexts;
 namespace Infra.Data.Migrations
 {
     [DbContext(typeof(ContextBase))]
-    [Migration("20170627221721_001")]
+    [Migration("20170703014739_001")]
     partial class _001
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,7 +26,9 @@ namespace Infra.Data.Migrations
 
                     b.Property<string>("ExcluidoPor");
 
-                    b.Property<string>("Nome");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(120);
 
                     b.HasKey("Id");
 
@@ -209,37 +211,32 @@ namespace Infra.Data.Migrations
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole")
                         .WithMany("Claims")
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("RoleId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserClaim<string>", b =>
                 {
                     b.HasOne("Infra.BaseIdentity.Models.ApplicationUser")
                         .WithMany("Claims")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserLogin<string>", b =>
                 {
                     b.HasOne("Infra.BaseIdentity.Models.ApplicationUser")
                         .WithMany("Logins")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserRole<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole")
                         .WithMany("Users")
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("RoleId");
 
                     b.HasOne("Infra.BaseIdentity.Models.ApplicationUser")
                         .WithMany("Roles")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("UserId");
                 });
         }
     }
