@@ -7,3 +7,12 @@ X:\DEV 2017\GIT\BaseDddCore\core1baseddd\04 - Domain\Domain\obj\Debug\netcoreapp
 X:\DEV 2017\GIT\BaseDddCore\core1baseddd\04 - Domain\Domain\obj\Debug\netcoreapp1.1\Domain.AssemblyInfo.cs
 X:\DEV 2017\GIT\BaseDddCore\core1baseddd\04 - Domain\Domain\obj\Debug\netcoreapp1.1\Domain.dll
 X:\DEV 2017\GIT\BaseDddCore\core1baseddd\04 - Domain\Domain\obj\Debug\netcoreapp1.1\Domain.pdb
+X:\DEV 2017\GIT\BasicDddSolutionUsing.NetCore1.1\core1baseddd\04 - Domain\Domain\bin\Debug\netcoreapp1.1\Domain.deps.json
+X:\DEV 2017\GIT\BasicDddSolutionUsing.NetCore1.1\core1baseddd\04 - Domain\Domain\bin\Debug\netcoreapp1.1\Domain.dll
+X:\DEV 2017\GIT\BasicDddSolutionUsing.NetCore1.1\core1baseddd\04 - Domain\Domain\bin\Debug\netcoreapp1.1\Domain.pdb
+X:\DEV 2017\GIT\BasicDddSolutionUsing.NetCore1.1\core1baseddd\04 - Domain\Domain\bin\Debug\netcoreapp1.1\Infra.BaseIdentity.dll
+X:\DEV 2017\GIT\BasicDddSolutionUsing.NetCore1.1\core1baseddd\04 - Domain\Domain\bin\Debug\netcoreapp1.1\Infra.BaseIdentity.pdb
+X:\DEV 2017\GIT\BasicDddSolutionUsing.NetCore1.1\core1baseddd\04 - Domain\Domain\obj\Debug\netcoreapp1.1\Domain.csprojResolveAssemblyReference.cache
+X:\DEV 2017\GIT\BasicDddSolutionUsing.NetCore1.1\core1baseddd\04 - Domain\Domain\obj\Debug\netcoreapp1.1\Domain.AssemblyInfo.cs
+X:\DEV 2017\GIT\BasicDddSolutionUsing.NetCore1.1\core1baseddd\04 - Domain\Domain\obj\Debug\netcoreapp1.1\Domain.dll
+X:\DEV 2017\GIT\BasicDddSolutionUsing.NetCore1.1\core1baseddd\04 - Domain\Domain\obj\Debug\netcoreapp1.1\Domain.pdb

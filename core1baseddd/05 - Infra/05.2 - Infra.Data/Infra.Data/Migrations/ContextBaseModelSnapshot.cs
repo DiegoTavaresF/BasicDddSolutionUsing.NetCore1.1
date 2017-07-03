@@ -25,7 +25,9 @@ namespace Infra.Data.Migrations
 
                     b.Property<string>("ExcluidoPor");
 
-                    b.Property<string>("Nome");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(120);
 
                     b.HasKey("Id");
 

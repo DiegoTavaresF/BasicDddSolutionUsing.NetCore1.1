@@ -1,4 +1,5 @@
-﻿using Domain.Entities.ExamplesEntity;
+﻿using Domain.Entities;
+using Domain.Entities.ExamplesEntity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Data.EntityConfig
@@ -12,6 +13,10 @@ namespace Infra.Data.EntityConfig
                 e.ToTable("ExampleEntity");
 
                 e.HasKey(w => w.Id);
+
+                e.Property(w => w.Name)
+                    .IsRequired()
+                    .HasMaxLength(PropertyLength.ExampleEntity_Name_MaxLength);
             });
         }
     }

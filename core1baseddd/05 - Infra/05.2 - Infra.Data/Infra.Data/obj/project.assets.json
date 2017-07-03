@@ -8803,10 +8803,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\DEV 2017\\GIT\\BaseDddCore\\core1baseddd\\05 - Infra\\05.2 - Infra.Data\\Infra.Data\\Infra.Data.csproj",
+      "projectUniqueName": "X:\\DEV 2017\\GIT\\BasicDddSolutionUsing.NetCore1.1\\core1baseddd\\05 - Infra\\05.2 - Infra.Data\\Infra.Data\\Infra.Data.csproj",
       "projectName": "Infra.Data",
-      "projectPath": "X:\\DEV 2017\\GIT\\BaseDddCore\\core1baseddd\\05 - Infra\\05.2 - Infra.Data\\Infra.Data\\Infra.Data.csproj",
-      "outputPath": "X:\\DEV 2017\\GIT\\BaseDddCore\\core1baseddd\\05 - Infra\\05.2 - Infra.Data\\Infra.Data\\obj\\",
+      "projectPath": "X:\\DEV 2017\\GIT\\BasicDddSolutionUsing.NetCore1.1\\core1baseddd\\05 - Infra\\05.2 - Infra.Data\\Infra.Data\\Infra.Data.csproj",
+      "outputPath": "X:\\DEV 2017\\GIT\\BasicDddSolutionUsing.NetCore1.1\\core1baseddd\\05 - Infra\\05.2 - Infra.Data\\Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -8814,11 +8814,11 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "X:\\DEV 2017\\GIT\\BaseDddCore\\core1baseddd\\04 - Domain\\Domain\\Domain.csproj": {
-              "projectPath": "X:\\DEV 2017\\GIT\\BaseDddCore\\core1baseddd\\04 - Domain\\Domain\\Domain.csproj"
+            "X:\\DEV 2017\\GIT\\BasicDddSolutionUsing.NetCore1.1\\core1baseddd\\04 - Domain\\Domain\\Domain.csproj": {
+              "projectPath": "X:\\DEV 2017\\GIT\\BasicDddSolutionUsing.NetCore1.1\\core1baseddd\\04 - Domain\\Domain\\Domain.csproj"
             },
-            "X:\\DEV 2017\\GIT\\BaseDddCore\\core1baseddd\\05 - Infra\\05.1 - CrossCutting\\Infra.BaseIdentity\\Infra.BaseIdentity.csproj": {
-              "projectPath": "X:\\DEV 2017\\GIT\\BaseDddCore\\core1baseddd\\05 - Infra\\05.1 - CrossCutting\\Infra.BaseIdentity\\Infra.BaseIdentity.csproj"
+            "X:\\DEV 2017\\GIT\\BasicDddSolutionUsing.NetCore1.1\\core1baseddd\\05 - Infra\\05.1 - CrossCutting\\Infra.BaseIdentity\\Infra.BaseIdentity.csproj": {
+              "projectPath": "X:\\DEV 2017\\GIT\\BasicDddSolutionUsing.NetCore1.1\\core1baseddd\\05 - Infra\\05.1 - CrossCutting\\Infra.BaseIdentity\\Infra.BaseIdentity.csproj"
             }
           }
         }

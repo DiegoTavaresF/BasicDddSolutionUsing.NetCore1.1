@@ -1,6 +1,6 @@
 ﻿namespace Domain.Base
 {
-    public class Entity<T> : IEntity<T>
+    public class Entity<T> : MainError, IEntity<T>
     {
         protected Entity()
         {

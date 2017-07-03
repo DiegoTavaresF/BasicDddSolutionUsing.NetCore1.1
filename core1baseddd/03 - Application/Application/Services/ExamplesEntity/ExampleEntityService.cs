@@ -1,8 +1,6 @@
 ﻿using Application.Base.Dto;
-using Domain.Entities.ExamplesEntity;
 using Infra.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -19,15 +17,13 @@ namespace Application.Services.ExamplesEntity
 
         public ICollection<DropdownDto> GetDropdown()
         {
-            var exampleEntity = new ExampleEntity { Nome = DateTime.Now.ToString() };
-
             return _contextBase.ExamplesEntity
                 .AsNoTracking()
-                .OrderBy(w => w.Nome)
+                .OrderBy(w => w.Name)
                 .Select(s => new DropdownDto
                 {
                     Id = s.Id,
-                    Nome = s.Nome
+                    Name = s.Name
                 }).ToList();
         }
     }

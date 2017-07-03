@@ -8772,10 +8772,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\DEV 2017\\GIT\\BaseDddCore\\core1baseddd\\05 - Infra\\05.1 - CrossCutting\\Infra.BaseIdentity\\Infra.BaseIdentity.csproj",
+      "projectUniqueName": "X:\\DEV 2017\\GIT\\BasicDddSolutionUsing.NetCore1.1\\core1baseddd\\05 - Infra\\05.1 - CrossCutting\\Infra.BaseIdentity\\Infra.BaseIdentity.csproj",
       "projectName": "Infra.BaseIdentity",
-      "projectPath": "X:\\DEV 2017\\GIT\\BaseDddCore\\core1baseddd\\05 - Infra\\05.1 - CrossCutting\\Infra.BaseIdentity\\Infra.BaseIdentity.csproj",
-      "outputPath": "X:\\DEV 2017\\GIT\\BaseDddCore\\core1baseddd\\05 - Infra\\05.1 - CrossCutting\\Infra.BaseIdentity\\obj\\",
+      "projectPath": "X:\\DEV 2017\\GIT\\BasicDddSolutionUsing.NetCore1.1\\core1baseddd\\05 - Infra\\05.1 - CrossCutting\\Infra.BaseIdentity\\Infra.BaseIdentity.csproj",
+      "outputPath": "X:\\DEV 2017\\GIT\\BasicDddSolutionUsing.NetCore1.1\\core1baseddd\\05 - Infra\\05.1 - CrossCutting\\Infra.BaseIdentity\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
