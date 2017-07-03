@@ -19,3 +19,9 @@
 /core1baseddd/05 - Infra/05.1 - CrossCutting/Infra.BaseIdentity/obj
 /core1baseddd/03 - Application/Application/obj
 /core1baseddd/.vs
+/core1baseddd/04 - Domain/XUnitTestDomain/obj
+/core1baseddd/03 - Application/XUnitTestApplication/obj
+/core1baseddd/01 - Presentation/XUnitTestWebApp/obj
+/core1baseddd/01 - Presentation/XUnitTestWebApp/bin
+/core1baseddd/04 - Domain/XUnitTestDomain/bin
+/core1baseddd/03 - Application/XUnitTestApplication/bin

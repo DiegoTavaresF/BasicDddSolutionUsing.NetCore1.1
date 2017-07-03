@@ -3,11 +3,12 @@
     "",
     "\\core1baseddd",
     "\\core1baseddd\\03 - Application",
+    "\\core1baseddd\\03 - Application\\Application",
     "\\core1baseddd\\03 - Application\\Application\\Base",
     "\\core1baseddd\\03 - Application\\Application\\Base\\Dto",
     "\\core1baseddd\\03 - Application\\Application\\Services",
     "\\core1baseddd\\03 - Application\\Application\\Services\\ExamplesEntity"
   ],
-  "SelectedNode": "\\core1baseddd\\Core1BaseDDD.sln",
+  "SelectedNode": "\\core1baseddd\\03 - Application\\Application\\Services\\ExamplesEntity\\ExampleEntityService.cs",
   "PreviewInSolutionExplorer": false
 }
