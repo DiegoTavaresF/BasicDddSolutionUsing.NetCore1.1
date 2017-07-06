@@ -5,6 +5,12 @@ namespace Domain.Entities.ExamplesEntity
 {
     public class ExampleEntity : Entity<Guid>, IExampleEntity
     {
+        public ExampleEntity(string _name)
+        {
+            SetId(Guid.NewGuid());
+            SetName(_name);
+        }
+
         public ExampleEntity()
         {
             SetId(Guid.NewGuid());

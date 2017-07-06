@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using WebApp.Services;
 using Application.Services.ExamplesEntity;
 using AutoMapper;
+using FluentValidation.AspNetCore;
 
 namespace WebApp
 {
@@ -72,7 +73,7 @@ namespace WebApp
                .AddEntityFrameworkStores<ContextBase>()
                .AddDefaultTokenProviders();
 
-            services.AddMvc();
+            services.AddMvc().AddFluentValidation();
             services.AddAutoMapper();
 
             services.AddTransient<IContextBase, ContextBase>();

@@ -12,7 +12,7 @@ namespace Domain.Base
         }
 
         [NotMapped]
-        public ICollection<string> Errors { get; set; }
+        public IList<string> Errors { get; set; }
 
         public void AddError(string error)
         {
