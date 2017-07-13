@@ -1,6 +1,27 @@
-﻿@{
+﻿@model WebApp.ViewModels.Home.HomeIndexViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
+
+<div class="row">
+    <p>
+        <div class="col-sm-12">
+            Examples
+            @Html.DropDownListFor(vm => vm.ExamplesEntity, new SelectList(Model.ExamplesEntity, "Id", "Name"), "Select")
+
+            @if (!Model.ExamplesEntity.Any())
+            {
+                <label style="color:red">Your table [dbo].[ExampleEntity] is empty. Insert some data to test.</label>
+            }
+        </div>
+    </p>
+
+    <p>
+        <div class="col-sm-12">
+            @Model.SomeOtherDataFromSomeOtherService
+        </div>
+    </p>
+</div>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">

@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Application.Base.Dto;
 using WebApp.ViewModels.BaseViewModel;
+using WebApp.ViewModels.ExampleEntity;
+using Application.Services.ExamplesEntity.Dto;
 
 namespace WebApp.Mapper
 {
@@ -24,6 +26,12 @@ namespace WebApp.Mapper
         public AutoMapperProfile()
         {
             CreateMap<DropdownDto, DropdownViewModel>();
+
+            CreateMap<ExampleEntitySaveEditDto, ExampleEntitySaveEditViewModel>();
+            CreateMap<ExampleEntitySaveEditViewModel, ExampleEntitySaveEditDto>();
+
+            CreateMap<ExampleEntityGridDataDto, ExampleEntityGridDataViewModel>();
+            CreateMap<ExampleEntityGridDto, ExampleEntityGridViewModel>();
         }
     }
 }

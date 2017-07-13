@@ -8,7 +8,7 @@ using Infra.Data.Contexts;
 namespace Infra.Data.Migrations
 {
     [DbContext(typeof(ContextBase))]
-    [Migration("20170703014739_001")]
+    [Migration("20170713004407_001")]
     partial class _001
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -22,9 +22,7 @@ namespace Infra.Data.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<bool>("Excluido");
-
-                    b.Property<string>("ExcluidoPor");
+                    b.Property<bool>("Deleted");
 
                     b.Property<string>("Name")
                         .IsRequired()

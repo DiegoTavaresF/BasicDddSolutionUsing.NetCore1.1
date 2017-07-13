@@ -1,26 +1,33 @@
-﻿@model WebApp.ViewModels.ExampleEntity.ExampleEntityIndexViewModel
+﻿@model WebApp.ViewModels.ExampleEntity.ExampleEntityGridViewModel
 
 <h2>Example data from Application.</h2>
 
 <div class="row">
-    <p>
-        <div class="col-sm-12">
-            Examples
-            @Html.DropDownListFor(vm => vm.ExamplesEntity, new SelectList(Model.ExamplesEntity, "Id", "Name"), "Select")
-
-            @if (!Model.ExamplesEntity.Any())
-            {
-                <label style="color:red">Your table [dbo].[ExampleEntity] is empty. Insert some data to test.</label>
-            }
-        </div>
-    </p>
-
-    <p>
-        <div class="col-sm-12">
-            @Model.SomeOtherDataFromSomeOtherService
-        </div>
-    </p>
+    <div class="col-md-12">
+        <a asp-area="" asp-controller="ExampleEntity" asp-action="Save">Add ExampleEntity</a>
+    </div>
 </div>
 
-<div class="row" style="margin-top:100px;">
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Data)
+                {
+                    <tr>
+                        <th scope="row"></th>
+                        <td>@item.Name</td>
+                        <td>@Html.ActionLink("Delete", "ExampleEntity")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

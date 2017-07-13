@@ -21,9 +21,7 @@ namespace Infra.Data.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<bool>("Excluido");
-
-                    b.Property<string>("ExcluidoPor");
+                    b.Property<bool>("Deleted");
 
                     b.Property<string>("Name")
                         .IsRequired()

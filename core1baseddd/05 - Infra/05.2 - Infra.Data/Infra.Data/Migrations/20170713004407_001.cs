@@ -14,8 +14,7 @@ namespace Infra.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
-                    Excluido = table.Column<bool>(nullable: false),
-                    ExcluidoPor = table.Column<string>(nullable: true),
+                    Deleted = table.Column<bool>(nullable: false),
                     Name = table.Column<string>(maxLength: 120, nullable: false)
                 },
                 constraints: table =>

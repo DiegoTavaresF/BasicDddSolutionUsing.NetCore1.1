@@ -11,6 +11,9 @@ using WebApp.Services;
 using Application.Services.ExamplesEntity;
 using AutoMapper;
 using FluentValidation.AspNetCore;
+using Application.Services.ExamplesEntity.Validator;
+using Application.Services.ExamplesEntity.Dto;
+using FluentValidation;
 
 namespace WebApp
 {
@@ -58,8 +61,16 @@ namespace WebApp
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=ExampleEntity}/{action=Index}/{id?}");
+                    name: "ExampleEntity_Index",
+                    template: "{controller=ExampleEntity}/{action=Index}");
+
+                routes.MapRoute(
+                    name: "ExampleEntity_Save",
+                    template: "{controller=ExampleEntity}/{action=Save}");
+
+                routes.MapRoute(
+                  name: "default",
+                  template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
 
@@ -77,7 +88,11 @@ namespace WebApp
             services.AddAutoMapper();
 
             services.AddTransient<IContextBase, ContextBase>();
+
+            services.AddTransient<IValidator<ExampleEntitySaveEditDto>, ExampleEntityValidator>();
+
             services.AddTransient<IExampleEntityService, ExampleEntityService>();
+
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
         }

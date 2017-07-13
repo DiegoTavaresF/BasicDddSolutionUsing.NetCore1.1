@@ -1,0 +1,35 @@
+﻿@using WebApp.ViewModels.ExampleEntity
+@model ExampleEntitySaveEditViewModel
+
+@{
+    ViewData["Title"] = "ExampleEntity";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+
+<form asp-controller="ExampleEntity" asp-action="Save" method="post" class="form-horizontal">
+    <hr />
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label asp-for="Name" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="submit">Save</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

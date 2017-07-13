@@ -4,12 +4,9 @@
     {
         protected Entity()
         {
-            //Erros = new List<string>();
         }
 
-        public bool Excluido { get; set; }
-
-        public string ExcluidoPor { get; set; }
+        public bool Deleted { get; set; }
 
         public T Id { get; private set; }
 

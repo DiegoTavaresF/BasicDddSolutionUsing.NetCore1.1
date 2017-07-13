@@ -1,5 +1,6 @@
 ﻿using Application.Base.Dto;
 using Application.Services.ExamplesEntity;
+using Application.Services.ExamplesEntity.Dto;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -21,15 +22,43 @@ namespace WebApp.Controllers
 
         public IActionResult Index()
         {
-            var examplesDropdownDto = _exampleEntityService.GetDropdown();
+            var resultDto = _exampleEntityService.GetGrid();
 
-            var result = new ExampleEntityIndexViewModel
+            var resultViewModel = _mapper.Map<ExampleEntityGridDto, ExampleEntityGridViewModel>(resultDto);
+
+            return View(resultViewModel);
+        }
+
+        public IActionResult Save()
+        {
+            var resultViewModel = new ExampleEntitySaveEditViewModel();
+
+            return View(resultViewModel);
+        }
+
+        [HttpPost]
+        public IActionResult Save(ExampleEntitySaveEditViewModel data)
+        {
+            var dto = _mapper.Map<ExampleEntitySaveEditViewModel, ExampleEntitySaveEditDto>(data);
+
+            var resultDto = _exampleEntityService.Save(dto);
+            var resultViewModel = _mapper.Map<ExampleEntitySaveEditDto, ExampleEntitySaveEditViewModel>(resultDto);
+
+            if (!resultDto.IsValid())
             {
-                ExamplesEntity = _mapper.Map<ICollection<DropdownDto>, ICollection<DropdownViewModel>>(examplesDropdownDto),
-                SomeOtherDataFromSomeOtherService = "Some data from another service, just to show that ViewModel can be diferent from Dto"
-            };
+                SetErros(resultDto.ValidationErros);
+                return View(resultViewModel);
+            }
 
-            return View(result);
+            return RedirectToAction("Index");
+        }
+
+        private void SetErros(IList<ValidationFailureDto> errors)
+        {
+            foreach (var error in errors)
+            {
+                ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
+            }
         }
     }
 }

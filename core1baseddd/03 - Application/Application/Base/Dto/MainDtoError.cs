@@ -5,23 +5,19 @@ namespace Application.Base.Dto
 {
     public class MainDtoError
     {
-        public IList<ValidationFailureDto> Errors { get; set; }
+        public MainDtoError()
+        {
+            Erros = new List<string>();
+            ValidationErros = new List<ValidationFailureDto>();
+        }
+
+        public IList<string> Erros { get; set; }
+
+        public IList<ValidationFailureDto> ValidationErros { get; set; }
 
         public bool IsValid()
         {
-            return !Errors.Any();
+            return !ValidationErros.Any() && !Erros.Any();
         }
-    }
-
-    public class ValidationFailureDto
-    {
-        public ValidationFailureDto(string errorMessage, string propertyName)
-        {
-            ErrorMessage = errorMessage;
-            PropertyName = propertyName;
-        }
-
-        public string ErrorMessage { get; set; }
-        public string PropertyName { get; set; }
     }
 }
